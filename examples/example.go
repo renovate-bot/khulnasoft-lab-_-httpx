@@ -15,7 +15,7 @@ func main() {
 
 	options := runner.Options{
 		Methods:         "GET",
-		InputTargetHost: goflags.StringSlice{"scanme.sh", "projectdiscovery.io", "localhost"},
+		InputTargetHost: goflags.StringSlice{"scanme.sh", "khulnasoft.com", "localhost"},
 		//InputFile: "./targetDomains.txt", // path to file containing the target domains list
 		OnResult: func(r runner.Result) {
 			// handle error

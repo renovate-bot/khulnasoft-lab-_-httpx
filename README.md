@@ -239,7 +239,7 @@ cat hosts.txt | httpx
 /_/ /_/\__/\__/ .___/_/|_|   v1.1.1  
              /_/            
 
-    projectdiscovery.io
+    khulnasoft.com
 
 [WRN] Use with caution. You are responsible for your actions
 [WRN] Developers assume no liability and are not responsible for any misuse or damage.
@@ -331,7 +331,7 @@ subfinder -d hackerone.com -silent| httpx -title -tech-detect -status-code
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.1
 
-    projectdiscovery.io
+    khulnasoft.com
 
 Use with caution. You are responsible for your actions
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -356,7 +356,7 @@ subfinder -d hackerone.com -silent | httpx -favicon
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.5
 
-      projectdiscovery.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -384,7 +384,7 @@ subfinder -d hackerone.com -silent | httpx -jarm
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.2.1
 
-      projectdiscovery.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -410,7 +410,7 @@ subfinder -d hackerone.com -silent | httpx -asn
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.2.1
 
-      projectdiscovery.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -439,7 +439,7 @@ httpx -l urls.txt -path /v1/api -sc
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.5
 
-      projectdiscovery.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -467,7 +467,7 @@ cat sub_domains.txt | docker run -i khulnasoft-labs/httpx
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.2
 
-      projectdiscovery.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -562,7 +562,7 @@ Probing feature is inspired by [@tomnomnom/httprobe](https://github.com/tomnomno
 
 <div align="center">
 
-`httpx` is made with 💙 by the [projectdiscovery](https://projectdiscovery.io) team and distributed under [MIT License](LICENSE.md).
+`httpx` is made with 💙 by the [projectdiscovery](https://khulnasoft.com) team and distributed under [MIT License](LICENSE.md).
 
 
 <a href="https://discord.gg/projectdiscovery"><img src="https://raw.githubusercontent.com/projectdiscovery/nuclei-burp-plugin/main/static/join-discord.png" width="300" alt="Join Discord"></a>
