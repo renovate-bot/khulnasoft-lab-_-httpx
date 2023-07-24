@@ -11,12 +11,16 @@ require (
 	github.com/hbakhtiyor/strsim v0.0.0-20190107154042-4d2bbb273edf
 	github.com/hdm/jarm-go v0.0.7
 	github.com/julienschmidt/httprouter v1.3.0
+	github.com/khulnasoft-labs/asnmap v1.0.0
+	github.com/khulnasoft-labs/clistats v0.0.1
 	github.com/khulnasoft-labs/fastdialer v0.0.35
-	github.com/khulnasoft-labs/fdmax v0.0.4
+	github.com/khulnasoft-labs/fdmax v0.0.5
 	github.com/khulnasoft-labs/goconfig v0.0.1
 	github.com/khulnasoft-labs/goflags v0.1.11
 	github.com/khulnasoft-labs/gologger v1.1.11
-	github.com/khulnasoft-labs/hmap v0.0.13
+	github.com/khulnasoft-labs/hmap v0.0.14
+	github.com/khulnasoft-labs/mapcidr v0.0.0-20230724053032-935414e9c35c
+	github.com/khulnasoft-labs/ratelimit v0.0.9
 	github.com/khulnasoft-labs/rawhttp v0.1.18
 	github.com/khulnasoft-labs/retryablehttp-go v1.0.19
 	github.com/khulnasoft-labs/utils v0.0.45
@@ -25,14 +29,10 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.25
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/pkg/errors v0.9.1
-	github.com/projectdiscovery/asnmap v1.0.4
 	github.com/projectdiscovery/cdncheck v1.0.9
-	github.com/projectdiscovery/clistats v0.0.19
-	github.com/projectdiscovery/dsl v0.0.14
-	github.com/projectdiscovery/mapcidr v1.1.2
-	github.com/projectdiscovery/ratelimit v0.0.9
+	github.com/projectdiscovery/dsl v0.0.15
 	github.com/projectdiscovery/tlsx v1.1.1
-	github.com/projectdiscovery/wappalyzergo v0.0.105
+	github.com/projectdiscovery/wappalyzergo v0.0.106
 	github.com/remeh/sizedwaitgroup v1.0.0
 	github.com/rs/xid v1.5.0
 	github.com/spaolacci/murmur3 v1.1.0
@@ -78,6 +78,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kataras/jwt v0.1.8 // indirect
 	github.com/khulnasoft-labs/blackrock v0.0.1 // indirect
+	github.com/khulnasoft-labs/freeport v0.0.1 // indirect
 	github.com/khulnasoft-labs/networkpolicy v0.0.6 // indirect
 	github.com/khulnasoft-labs/retryabledns v0.0.0-20230722104401-745c1d25618e // indirect
 	github.com/klauspost/compress v1.16.6 // indirect
@@ -98,20 +99,21 @@ require (
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
+	github.com/projectdiscovery/asnmap v1.0.4 // indirect
 	github.com/projectdiscovery/blackrock v0.0.1 // indirect
 	github.com/projectdiscovery/fastdialer v0.0.32 // indirect
-	github.com/projectdiscovery/freeport v0.0.5 // indirect
 	github.com/projectdiscovery/goflags v0.1.11 // indirect
 	github.com/projectdiscovery/gologger v1.1.11 // indirect
 	github.com/projectdiscovery/hmap v0.0.13 // indirect
+	github.com/projectdiscovery/mapcidr v1.1.2 // indirect
 	github.com/projectdiscovery/networkpolicy v0.0.6 // indirect
 	github.com/projectdiscovery/retryabledns v1.0.30 // indirect
 	github.com/projectdiscovery/retryablehttp-go v1.0.18 // indirect
-	github.com/projectdiscovery/utils v0.0.41-0.20230705082547-236cfa9298ab // indirect
+	github.com/projectdiscovery/utils v0.0.43 // indirect
 	github.com/refraction-networking/utls v1.3.3 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
-	github.com/sashabaranov/go-openai v1.13.0 // indirect
+	github.com/sashabaranov/go-openai v1.14.0 // indirect
 	github.com/shirou/gopsutil/v3 v3.23.6 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect

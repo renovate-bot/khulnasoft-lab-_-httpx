@@ -24,18 +24,18 @@ import (
 	"golang.org/x/exp/maps"
 
 	"github.com/PuerkitoBio/goquery"
-	asnmap "github.com/projectdiscovery/asnmap/libs"
+	asnmap "github.com/khulnasoft-labs/asnmap/libs"
 	dsl "github.com/projectdiscovery/dsl"
 	"github.com/khulnasoft-labs/httpx/common/customextract"
 	"github.com/khulnasoft-labs/httpx/common/hashes/jarm"
-	"github.com/projectdiscovery/mapcidr/asn"
+	"github.com/khulnasoft-labs/mapcidr/asn"
 	errorutil "github.com/khulnasoft-labs/utils/errors"
 
 	"github.com/Mzack9999/gcache"
 	"github.com/logrusorgru/aurora"
 	"github.com/pkg/errors"
 
-	"github.com/projectdiscovery/clistats"
+	"github.com/khulnasoft-labs/clistats"
 	"github.com/khulnasoft-labs/goconfig"
 	"github.com/khulnasoft-labs/httpx/common/hashes"
 	"github.com/khulnasoft-labs/retryablehttp-go"
@@ -43,7 +43,7 @@ import (
 	stringsutil "github.com/khulnasoft-labs/utils/strings"
 	urlutil "github.com/khulnasoft-labs/utils/url"
 
-	"github.com/projectdiscovery/ratelimit"
+	"github.com/khulnasoft-labs/ratelimit"
 	"github.com/remeh/sizedwaitgroup"
 
 	// automatic fd max increase if running as root
@@ -56,7 +56,7 @@ import (
 	"github.com/khulnasoft-labs/httpx/common/httpx"
 	"github.com/khulnasoft-labs/httpx/common/slice"
 	"github.com/khulnasoft-labs/httpx/common/stringz"
-	"github.com/projectdiscovery/mapcidr"
+	"github.com/khulnasoft-labs/mapcidr"
 	"github.com/khulnasoft-labs/rawhttp"
 	fileutil "github.com/khulnasoft-labs/utils/file"
 	pdhttputil "github.com/khulnasoft-labs/utils/http"
