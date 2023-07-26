@@ -13,7 +13,6 @@
   <a href="#notes">Notes</a> •
 </p>
 
-
 `httpx` is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the [retryablehttp](https://github.com/khulnasoft-labs/retryablehttp-go) library. It is designed to maintain result reliability with an increased number of threads.
 
 # Features
