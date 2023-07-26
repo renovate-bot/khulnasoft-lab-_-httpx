@@ -11,7 +11,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/exp/maps"
 
-	"github.com/projectdiscovery/cdncheck"
+	"github.com/khulnasoft-labs/cdncheck"
 	"github.com/khulnasoft-labs/goconfig"
 	"github.com/khulnasoft-labs/goflags"
 	"github.com/khulnasoft-labs/gologger"

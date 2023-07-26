@@ -553,6 +553,4 @@ Probing feature is inspired by [@tomnomnom/httprobe](https://github.com/tomnomno
 `httpx` is made with 💙 by the [khulnasoft-labs](https://khulnasoft.com) team and distributed under [MIT License](LICENSE.md).
 
 
-<a href="https://discord.gg/khulnasoft-labs"><img src="https://raw.githubusercontent.com/khulnasoft-labs/nuclei-burp-plugin/main/static/join-discord.png" width="300" alt="Join Discord"></a>
-
 </div>

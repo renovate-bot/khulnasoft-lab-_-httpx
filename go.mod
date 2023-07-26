@@ -1,17 +1,18 @@
 module github.com/khulnasoft-labs/httpx
 
-go 1.18
+go 1.20
 
 require (
 	github.com/Mzack9999/gcache v0.0.0-20230410081825-519e28eab057
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/bxcodec/faker/v4 v4.0.0-beta.3
 	github.com/corpix/uarand v0.2.0
-	github.com/go-rod/rod v0.114.0
+	github.com/go-rod/rod v0.114.1
 	github.com/hbakhtiyor/strsim v0.0.0-20190107154042-4d2bbb273edf
 	github.com/hdm/jarm-go v0.0.7
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/khulnasoft-labs/asnmap v1.0.0
+	github.com/khulnasoft-labs/cdncheck v1.0.2
 	github.com/khulnasoft-labs/clistats v0.0.1
 	github.com/khulnasoft-labs/fastdialer v0.0.35
 	github.com/khulnasoft-labs/fdmax v0.0.5
@@ -22,14 +23,13 @@ require (
 	github.com/khulnasoft-labs/mapcidr v0.0.0-20230724053032-935414e9c35c
 	github.com/khulnasoft-labs/ratelimit v0.0.9
 	github.com/khulnasoft-labs/rawhttp v0.1.18
-	github.com/khulnasoft-labs/retryablehttp-go v1.0.19
+	github.com/khulnasoft-labs/retryablehttp-go v1.0.20
 	github.com/khulnasoft-labs/utils v0.0.45
 	github.com/logrusorgru/aurora v2.0.3+incompatible
 	github.com/mfonda/simhash v0.0.0-20151007195837-79f94a1100d6
 	github.com/microcosm-cc/bluemonday v1.0.25
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/pkg/errors v0.9.1
-	github.com/projectdiscovery/cdncheck v1.0.9
 	github.com/projectdiscovery/dsl v0.0.15
 	github.com/projectdiscovery/tlsx v1.1.1
 	github.com/projectdiscovery/wappalyzergo v0.0.106
@@ -38,7 +38,7 @@ require (
 	github.com/spaolacci/murmur3 v1.1.0
 	github.com/stretchr/testify v1.8.4
 	go.uber.org/multierr v1.11.0
-	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1
+	golang.org/x/exp v0.0.0-20230725093048-515e97ebf090
 	golang.org/x/net v0.12.0
 	golang.org/x/text v0.11.0
 )
@@ -129,7 +129,7 @@ require (
 	github.com/tklauser/numcpus v0.6.0 // indirect
 	github.com/ulikunitz/xz v0.5.11 // indirect
 	github.com/ulule/deepcopier v0.0.0-20200430083143-45decc6639b6 // indirect
-	github.com/weppos/publicsuffix-go v0.30.1-0.20230422193905-8fecedd899db // indirect
+	github.com/weppos/publicsuffix-go v0.30.1 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	github.com/yl2chen/cidranger v1.0.2 // indirect
 	github.com/ysmood/fetchup v0.2.3 // indirect

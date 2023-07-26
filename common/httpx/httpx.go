@@ -13,7 +13,7 @@ import (
 
 	"github.com/corpix/uarand"
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/projectdiscovery/cdncheck"
+	"github.com/khulnasoft-labs/cdncheck"
 	"github.com/khulnasoft-labs/fastdialer/fastdialer"
 	"github.com/khulnasoft-labs/fastdialer/fastdialer/ja3/impersonate"
 	"github.com/khulnasoft-labs/rawhttp"

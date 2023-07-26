@@ -25,11 +25,11 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	asnmap "github.com/khulnasoft-labs/asnmap/libs"
-	dsl "github.com/projectdiscovery/dsl"
 	"github.com/khulnasoft-labs/httpx/common/customextract"
 	"github.com/khulnasoft-labs/httpx/common/hashes/jarm"
 	"github.com/khulnasoft-labs/mapcidr/asn"
 	errorutil "github.com/khulnasoft-labs/utils/errors"
+	dsl "github.com/projectdiscovery/dsl"
 
 	"github.com/Mzack9999/gcache"
 	"github.com/logrusorgru/aurora"

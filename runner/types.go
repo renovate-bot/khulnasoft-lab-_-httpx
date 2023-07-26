@@ -6,10 +6,10 @@ import (
 
 	"github.com/bxcodec/faker/v4"
 	"github.com/bxcodec/faker/v4/pkg/options"
-	"github.com/mitchellh/mapstructure"
 	"github.com/khulnasoft-labs/httpx/common/httpx"
-	"github.com/projectdiscovery/tlsx/pkg/tlsx/clients"
 	mapsutil "github.com/khulnasoft-labs/utils/maps"
+	"github.com/mitchellh/mapstructure"
+	"github.com/projectdiscovery/tlsx/pkg/tlsx/clients"
 )
 
 type AsnResponse struct {

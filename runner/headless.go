@@ -28,7 +28,7 @@ type Browser struct {
 }
 
 func NewBrowser(proxy string, useLocal bool) (*Browser, error) {
-	dataStore, err := os.MkdirTemp("", "nuclei-*")
+	dataStore, err := os.MkdirTemp("", "vulscan-*")
 	if err != nil {
 		return nil, errors.Wrap(err, "could not create temporary directory")
 	}
