@@ -9,9 +9,7 @@
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-_red.svg"></a>
 <a href="https://goreportcard.com/badge/github.com/khulnasoft-labs/httpx"><img src="https://goreportcard.com/badge/github.com/khulnasoft-labs/httpx"></a>
 <a href="https://github.com/khulnasoft-labs/httpx/releases"><img src="https://img.shields.io/github/release/khulnasoft-labs/httpx"></a>
-<a href="https://hub.docker.com/r/khulnasoft-labs/httpx"><img src="https://img.shields.io/docker/pulls/khulnasoft-labs/httpx.svg"></a>
-<a href="https://twitter.com/pdiscoveryio"><img src="https://img.shields.io/twitter/follow/pdiscoveryio.svg?logo=twitter"></a>
-<a href="https://discord.gg/projectdiscovery"><img src="https://img.shields.io/discord/695645237418131507.svg?logo=discord"></a>
+<a href="https://twitter.com/khulnasoft"><img src="https://img.shields.io/twitter/follow/khulnasoft.svg?logo=twitter"></a>
 </p>
 
 <p align="center">
@@ -20,7 +18,6 @@
   <a href="#usage">Usage</a> •
   <a href="#running-httpx">Running httpx</a> •
   <a href="#notes">Notes</a> •
-  <a href="https://discord.gg/projectdiscovery">Join Discord</a>
 </p>
 
 
@@ -29,7 +26,6 @@
 # Features
 
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/8293321/135731750-4c1d38b1-bd2a-40f9-88e9-3c4b9f6da378.png" alt="httpx" width="700px">
   <br>
 </h1>
 
@@ -562,9 +558,9 @@ Probing feature is inspired by [@tomnomnom/httprobe](https://github.com/tomnomno
 
 <div align="center">
 
-`httpx` is made with 💙 by the [projectdiscovery](https://khulnasoft.com) team and distributed under [MIT License](LICENSE.md).
+`httpx` is made with 💙 by the [khulnasoft-labs](https://khulnasoft.com) team and distributed under [MIT License](LICENSE.md).
 
 
-<a href="https://discord.gg/projectdiscovery"><img src="https://raw.githubusercontent.com/projectdiscovery/nuclei-burp-plugin/main/static/join-discord.png" width="300" alt="Join Discord"></a>
+<a href="https://discord.gg/khulnasoft-labs"><img src="https://raw.githubusercontent.com/khulnasoft-labs/nuclei-burp-plugin/main/static/join-discord.png" width="300" alt="Join Discord"></a>
 
 </div>
