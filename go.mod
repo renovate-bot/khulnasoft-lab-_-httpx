@@ -29,7 +29,7 @@ require (
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/corona10/goimagehash v1.1.0
 	github.com/go-faker/faker/v4 v4.2.0
-	github.com/go-rod/rod v0.114.0
+	github.com/go-rod/rod v0.114.4
 	github.com/hdm/jarm-go v0.0.7
 	github.com/jaytaylor/html2text v0.0.0-20230321000545-74c2419ad056
 	github.com/khulnasoft-lab/asnmap v1.0.1
