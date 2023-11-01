@@ -1,6 +1,8 @@
 module github.com/khulnasoft-lab/httpx
 
-go 1.20
+go 1.21
+
+toolchain go1.21.3
 
 require (
 	github.com/akrylysov/pogreb v0.10.1 // indirect
@@ -44,7 +46,7 @@ require (
 	github.com/khulnasoft-lab/ratelimit v0.0.10
 	github.com/khulnasoft-lab/rawhttp v0.1.20
 	github.com/khulnasoft-lab/retryablehttp-go v1.0.21
-	github.com/khulnasoft-lab/tlsx v0.0.0-20231101021641-6bcecd04fec2
+	github.com/khulnasoft-lab/tlsx v0.0.0-20231101045244-b306c2a45866
 	github.com/khulnasoft-lab/utils v0.0.47
 	github.com/khulnasoft-lab/wappalyzergo v0.0.0-20231101023942-2f19f8c6a4ea
 	github.com/mfonda/simhash v0.0.0-20151007195837-79f94a1100d6

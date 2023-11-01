@@ -172,6 +172,8 @@ github.com/khulnasoft-lab/stringsutil v0.0.3 h1:mZyGsHx1tKxP5QhtsM/NFaokOuQgM6nc
 github.com/khulnasoft-lab/stringsutil v0.0.3/go.mod h1:So7czedSDwk2jvh3OraDyB2K8CC4TKoJFiUsMr2bJeY=
 github.com/khulnasoft-lab/tlsx v0.0.0-20231101021641-6bcecd04fec2 h1:yOHCmtVOhTpCkt+cmGl4UV0oX1RWtf4f3FRiKUXEgIw=
 github.com/khulnasoft-lab/tlsx v0.0.0-20231101021641-6bcecd04fec2/go.mod h1:weMPYaULkHQOp/xVxf36X3g7XnjQIqBXtSRxsIQ4+04=
+github.com/khulnasoft-lab/tlsx v0.0.0-20231101045244-b306c2a45866 h1:t2bPOChvzDa9oTbbECu604XkwSWtVyC/LXXYwDUX224=
+github.com/khulnasoft-lab/tlsx v0.0.0-20231101045244-b306c2a45866/go.mod h1:weMPYaULkHQOp/xVxf36X3g7XnjQIqBXtSRxsIQ4+04=
 github.com/khulnasoft-lab/utils v0.0.47 h1:ILZWJ5mS696XnQC4vuizNnYZAf9sd9ZY4xuST8y8dtY=
 github.com/khulnasoft-lab/utils v0.0.47/go.mod h1:4nuOcyrid0Br7/nwZvMQoha0tCiH3LAmWsD8a+2ufDs=
 github.com/khulnasoft-lab/wappalyzergo v0.0.0-20231101023942-2f19f8c6a4ea h1:Wzs7cA9pt9CzOCGkBnaOd/fJC/vwFTAq6ngK/AFDkJ4=
