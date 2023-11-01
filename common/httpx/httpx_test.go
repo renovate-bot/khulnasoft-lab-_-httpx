@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/khulnasoft-labs/retryablehttp-go"
+	"github.com/khulnasoft-lab/retryablehttp-go"
 	"github.com/stretchr/testify/require"
 )
 

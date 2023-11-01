@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	stringsutil "github.com/khulnasoft-labs/utils/strings"
-	urlutil "github.com/khulnasoft-labs/utils/url"
+	stringsutil "github.com/khulnasoft-lab/utils/strings"
+	urlutil "github.com/khulnasoft-lab/utils/url"
 	"github.com/spaolacci/murmur3"
 )
 

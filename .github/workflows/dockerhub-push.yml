@@ -17,7 +17,7 @@ jobs:
       - name: Get Github tag
         id: meta
         run: |
-          curl --silent "https://api.github.com/repos/khulnasoft-labs/httpx/releases/latest" | jq -r .tag_name | xargs -I {} echo TAG={} >> $GITHUB_OUTPUT
+          curl --silent "https://api.github.com/repos/khulnasoft-lab/httpx/releases/latest" | jq -r .tag_name | xargs -I {} echo TAG={} >> $GITHUB_OUTPUT
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -28,9 +28,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2 
         with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build and push
         uses: docker/build-push-action@v4
@@ -38,4 +37,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/arm
           push: true
-          tags: khulnasoft-labs/httpx:latest,khulnasoft-labs/httpx:${{ steps.meta.outputs.TAG }}
+          tags: khulnasoft-lab/httpx:latest,khulnasoft-lab/httpx:${{ steps.meta.outputs.TAG }}

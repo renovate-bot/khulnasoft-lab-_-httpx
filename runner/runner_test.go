@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/khulnasoft-labs/fdmax/autofdmax"
-	"github.com/khulnasoft-labs/httpx/common/httpx"
+	_ "github.com/khulnasoft-lab/fdmax/autofdmax"
+	"github.com/khulnasoft-lab/httpx/common/httpx"
 	"github.com/stretchr/testify/require"
 )
 

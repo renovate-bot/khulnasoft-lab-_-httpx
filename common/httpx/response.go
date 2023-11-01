@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	httputil "github.com/khulnasoft-labs/utils/http"
-	"github.com/projectdiscovery/tlsx/pkg/tlsx/clients"
+	"github.com/khulnasoft-lab/tlsx/pkg/tlsx/clients"
+	httputil "github.com/khulnasoft-lab/utils/http"
 )
 
 // Response contains the response to a server
@@ -69,9 +69,13 @@ func (r *Response) GetChainStatusCodes() []int {
 // GetChain dump the whole redirect chain as string
 func (r *Response) GetChain() string {
 	var respchain strings.Builder
-	for _, chainItem := range r.Chain {
-		respchain.Write(chainItem.Request)
-		respchain.Write(chainItem.Response)
+	for counter, chainItem := range r.Chain {
+		if counter != 0 {
+			respchain.Write(chainItem.Request)
+		}
+		if counter < len(r.Chain)-1 {
+			respchain.Write(chainItem.Response)
+		}
 	}
 	return respchain.String()
 }

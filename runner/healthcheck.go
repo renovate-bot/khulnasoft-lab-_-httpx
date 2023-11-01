@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/khulnasoft-labs/goflags"
-	fileutil "github.com/khulnasoft-labs/utils/file"
+	"github.com/khulnasoft-lab/goflags"
+	fileutil "github.com/khulnasoft-lab/utils/file"
 )
 
 func DoHealthCheck(options *Options, flagSet *goflags.FlagSet) string {

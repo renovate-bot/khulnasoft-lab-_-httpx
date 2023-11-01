@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/khulnasoft-labs/httpx/internal/testutils"
-	"github.com/khulnasoft-labs/httpx/runner"
+	"github.com/khulnasoft-lab/httpx/internal/testutils"
+	"github.com/khulnasoft-lab/httpx/runner"
 )
 
 var libraryTestcases = map[string]testutils.TestCase{
@@ -44,7 +44,7 @@ func (h *httpxLibrary) Execute() error {
 
 	httpxRunner.RunEnumeration()
 
-	// httpx removes default ports for simplicity Ref: https://pkg.go.dev/github.com/khulnasoft-labs/httpx/common/stringz#RemoveURLDefaultPort
+	// httpx removes default ports for simplicity Ref: https://pkg.go.dev/github.com/khulnasoft-lab/httpx/common/stringz#RemoveURLDefaultPort
 	expected := "https://scanme.sh"
 
 	if got != expected {

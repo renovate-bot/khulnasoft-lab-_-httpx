@@ -16,7 +16,7 @@ go build -o httpx_dev$extension ../httpx
 echo "::endgroup::"
 
 echo "::group::Building latest release of httpx"
-go build -o httpx$extension -v github.com/khulnasoft-labs/httpx/cmd/httpx
+go build -o httpx$extension -v github.com/khulnasoft-lab/httpx/cmd/httpx
 echo "::endgroup::"
 
 echo 'Starting httpx functional test'

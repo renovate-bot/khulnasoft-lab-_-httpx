@@ -3,7 +3,7 @@ package customheader
 import (
 	"strings"
 
-	stringsutil "github.com/khulnasoft-labs/utils/strings"
+	stringsutil "github.com/khulnasoft-lab/utils/strings"
 )
 
 // CustomHeaders valid for all requests

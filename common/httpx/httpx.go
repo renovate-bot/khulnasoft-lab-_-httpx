@@ -13,15 +13,16 @@ import (
 
 	"github.com/corpix/uarand"
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/khulnasoft-labs/cdncheck"
-	"github.com/khulnasoft-labs/fastdialer/fastdialer"
-	"github.com/khulnasoft-labs/fastdialer/fastdialer/ja3/impersonate"
-	"github.com/khulnasoft-labs/rawhttp"
-	retryablehttp "github.com/khulnasoft-labs/retryablehttp-go"
-	"github.com/khulnasoft-labs/utils/generic"
-	pdhttputil "github.com/khulnasoft-labs/utils/http"
-	stringsutil "github.com/khulnasoft-labs/utils/strings"
-	urlutil "github.com/khulnasoft-labs/utils/url"
+	"github.com/khulnasoft-lab/cdncheck"
+	"github.com/khulnasoft-lab/fastdialer/fastdialer"
+	"github.com/khulnasoft-lab/fastdialer/fastdialer/ja3/impersonate"
+	"github.com/khulnasoft-lab/httpx/common/httputilz"
+	"github.com/khulnasoft-lab/rawhttp"
+	retryablehttp "github.com/khulnasoft-lab/retryablehttp-go"
+	"github.com/khulnasoft-lab/utils/generic"
+	pdhttputil "github.com/khulnasoft-lab/utils/http"
+	stringsutil "github.com/khulnasoft-lab/utils/strings"
+	urlutil "github.com/khulnasoft-lab/utils/url"
 	"golang.org/x/net/context"
 	"golang.org/x/net/http2"
 )
@@ -65,6 +66,14 @@ func New(options *Options) (*HTTPX, error) {
 	retryablehttpOptions.Timeout = httpx.Options.Timeout
 	retryablehttpOptions.RetryMax = httpx.Options.RetryMax
 
+	handleHSTS := func(req *http.Request) {
+		if req.Response.Header.Get("Strict-Transport-Security") == "" {
+			return
+		}
+
+		req.URL.Scheme = "https"
+	}
+
 	var redirectFunc = func(_ *http.Request, _ []*http.Request) error {
 		// Tell the http client to not follow redirect
 		return http.ErrUseLastResponse
@@ -75,10 +84,16 @@ func New(options *Options) (*HTTPX, error) {
 		redirectFunc = func(redirectedRequest *http.Request, previousRequests []*http.Request) error {
 			// add custom cookies if necessary
 			httpx.setCustomCookies(redirectedRequest)
+
 			if len(previousRequests) >= options.MaxRedirects {
 				// https://github.com/golang/go/issues/10069
 				return http.ErrUseLastResponse
 			}
+
+			if options.RespectHSTS {
+				handleHSTS(redirectedRequest)
+			}
+
 			return nil
 		}
 	}
@@ -103,6 +118,11 @@ func New(options *Options) (*HTTPX, error) {
 				// https://github.com/golang/go/issues/10069
 				return http.ErrUseLastResponse
 			}
+
+			if options.RespectHSTS {
+				handleHSTS(redirectedRequest)
+			}
+
 			return nil
 		}
 	}
@@ -224,7 +244,7 @@ get_response:
 		return nil, closeErr
 	}
 
-	// Todo: replace with https://github.com/khulnasoft-labs/utils/issues/110
+	// Todo: replace with https://github.com/khulnasoft-lab/utils/issues/110
 	resp.RawData = make([]byte, len(respbody))
 	copy(resp.RawData, respbody)
 
@@ -264,8 +284,12 @@ get_response:
 	resp.Lines = len(strings.Split(respbodystr, "\n"))
 
 	if !h.Options.Unsafe && h.Options.TLSGrab {
-		// extracts TLS data if any
-		resp.TLSData = h.TLSGrab(httpresp)
+		if h.Options.ZTLS {
+			resp.TLSData = h.ZTLSGrab(httpresp)
+		} else {
+			// extracts TLS data if any
+			resp.TLSData = h.TLSGrab(httpresp)
+		}
 	}
 
 	resp.CSPData = h.CSPGrab(&resp)
@@ -384,4 +408,15 @@ func (httpx *HTTPX) setCustomCookies(req *http.Request) {
 			req.AddCookie(cookie)
 		}
 	}
+}
+
+func (httpx *HTTPX) Sanitize(respStr string, trimLine, normalizeSpaces bool) string {
+	respStr = httpx.htmlPolicy.Sanitize(respStr)
+	if trimLine {
+		respStr = strings.Replace(respStr, "\n", "", -1)
+	}
+	if normalizeSpaces {
+		respStr = httputilz.NormalizeSpaces(respStr)
+	}
+	return respStr
 }

@@ -1,6 +1,6 @@
 package customlist
 
-import "github.com/khulnasoft-labs/httpx/common/fileutil"
+import "github.com/khulnasoft-lab/httpx/common/fileutil"
 
 const maxRecursion = 10
 

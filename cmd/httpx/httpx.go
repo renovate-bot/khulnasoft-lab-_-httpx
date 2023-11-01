@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/khulnasoft-labs/gologger"
-	"github.com/khulnasoft-labs/httpx/runner"
-	errorutil "github.com/khulnasoft-labs/utils/errors"
+	"github.com/khulnasoft-lab/gologger"
+	"github.com/khulnasoft-lab/httpx/runner"
+	errorutil "github.com/khulnasoft-lab/utils/errors"
 )
 
 func main() {

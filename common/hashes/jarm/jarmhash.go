@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/hdm/jarm-go"
-	"github.com/khulnasoft-labs/fastdialer/fastdialer"
+	"github.com/khulnasoft-lab/fastdialer/fastdialer"
 )
 
 const (

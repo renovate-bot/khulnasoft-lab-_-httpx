@@ -7,8 +7,8 @@ import (
 	"net/http/httputil"
 	"strings"
 
-	"github.com/khulnasoft-labs/retryablehttp-go"
-	urlutil "github.com/khulnasoft-labs/utils/url"
+	"github.com/khulnasoft-lab/retryablehttp-go"
+	urlutil "github.com/khulnasoft-lab/utils/url"
 )
 
 const (

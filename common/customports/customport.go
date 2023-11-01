@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	sliceutil "github.com/khulnasoft-labs/utils/slice"
+	sliceutil "github.com/khulnasoft-lab/utils/slice"
 
-	"github.com/khulnasoft-labs/httpx/common/httpx"
+	"github.com/khulnasoft-lab/httpx/common/httpx"
 )
 
 //nolint:gochecknoinits // this flag var needs a small refactor to avoid the use of the init function

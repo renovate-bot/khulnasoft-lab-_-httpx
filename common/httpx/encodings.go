@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	stringsutil "github.com/khulnasoft-labs/utils/strings"
+	stringsutil "github.com/khulnasoft-lab/utils/strings"
 	"golang.org/x/text/encoding/korean"
 	"golang.org/x/text/encoding/simplifiedchinese"
 	"golang.org/x/text/encoding/traditionalchinese"

@@ -6,8 +6,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/khulnasoft-labs/gologger"
-	"github.com/khulnasoft-labs/retryablehttp-go"
+	"github.com/khulnasoft-lab/gologger"
+	"github.com/khulnasoft-lab/retryablehttp-go"
 )
 
 const (

@@ -24,6 +24,7 @@ type Options struct {
 	VHostSimilarityRatio int
 	FollowRedirects      bool
 	FollowHostRedirects  bool
+	RespectHSTS          bool
 	MaxRedirects         int
 	Unsafe               bool
 	TLSGrab              bool
@@ -62,7 +63,7 @@ var DefaultOptions = Options{
 	VHostIgnoreNumberOfLines: false,
 	VHostStripHTML:           false,
 	VHostSimilarityRatio:     85,
-	DefaultUserAgent:         "httpx - Open-source project (github.com/khulnasoft-labs/httpx)",
+	DefaultUserAgent:         "httpx - Open-source project (github.com/khulnasoft-lab/httpx)",
 }
 
 func (options *Options) parseCustomCookies() {

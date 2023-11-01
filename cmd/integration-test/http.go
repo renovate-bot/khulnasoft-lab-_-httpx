@@ -5,10 +5,12 @@ import (
 	"io"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"strings"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/khulnasoft-labs/httpx/internal/testutils"
+	"github.com/khulnasoft-lab/httpx/internal/testutils"
+	fileutil "github.com/khulnasoft-lab/utils/file"
 )
 
 var httpTestcases = map[string]testutils.TestCase{
@@ -17,19 +19,20 @@ var httpTestcases = map[string]testutils.TestCase{
 	"Raw HTTP GET Request":                                                                &standardHttpGet{unsafe: true},
 	"Raw request with non standard rfc path via stdin":                                    &standardHttpGet{unsafe: true, stdinPath: "/%invalid"},
 	"Raw request with non standard rfc path via cli flag":                                 &standardHttpGet{unsafe: true, path: "/%invalid"},
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/363":           &issue363{}, // infinite redirect
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/276":           &issue276{}, // full path with port in output
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/277":           &issue277{}, // scheme://host:port via stdin
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/303":           &issue303{}, // misconfigured gzip header with uncompressed body
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/400":           &issue400{}, // post operation with body
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/414":           &issue414{}, // stream mode with path
-	"Regression test for: https://github.com/khulnasoft-labs/httpx/issues/433":           &issue433{}, // new line scanning with title flag
-	"Request URI to existing file - https://github.com/khulnasoft-labs/httpx/issues/480": &issue480{}, // request uri pointing to existing file
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/363":           &issue363{}, // infinite redirect
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/276":           &issue276{}, // full path with port in output
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/277":           &issue277{}, // scheme://host:port via stdin
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/303":           &issue303{}, // misconfigured gzip header with uncompressed body
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/400":           &issue400{}, // post operation with body
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/414":           &issue414{}, // stream mode with path
+	"Regression test for: https://github.com/khulnasoft-lab/httpx/issues/433":           &issue433{}, // new line scanning with title flag
+	"Request URI to existing file - https://github.com/khulnasoft-lab/httpx/issues/480": &issue480{}, // request uri pointing to existing file
 	"Standard HTTP GET Request with match response time":                                  &standardHttpGet{mrt: true, inputValue: "\"<10s\""},
 	"Standard HTTP GET Request with filter response time":                                 &standardHttpGet{frt: true, inputValue: "\">3ms\""},
 	"Multiple Custom Header":                                                              &customHeader{inputData: []string{"-debug-req", "-H", "'user-agent: test'", "-H", "'foo: bar'"}, expectedOutput: []string{"User-Agent: test", "Foo: bar"}},
 	"Output Match Condition":                                                              &outputMatchCondition{inputData: []string{"-silent", "-mdc", "\"status_code == 200\""}},
 	"Output Filter Condition":                                                             &outputFilterCondition{inputData: []string{"-silent", "-fdc", "\"status_code == 400\""}},
+	"Output All":                                                                          &outputAll{},
 }
 
 type standardHttpGet struct {
@@ -375,5 +378,44 @@ func (h *outputFilterCondition) Execute() error {
 	if len(results) != 1 {
 		return errIncorrectResultsCount(results)
 	}
+	return nil
+}
+
+type outputAll struct {
+}
+
+func (h *outputAll) Execute() error {
+	var ts *httptest.Server
+	router := httprouter.New()
+	router.GET("/", httprouter.Handle(func(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(200)
+		fmt.Fprint(w, `{"status": "ok"}`)
+	}))
+	ts = httptest.NewServer(router)
+	defer ts.Close()
+
+	fileName := "test_output_all"
+	_, hErr := testutils.RunHttpxAndGetResults(ts.URL, false, []string{"-o", fileName, "-oa"}...)
+	if hErr != nil {
+		return hErr
+	}
+
+	expectedFiles := []string{fileName, fileName + ".json", fileName + ".csv"}
+	var actualFiles []string
+
+	for _, file := range expectedFiles {
+		if fileutil.FileExists(file) {
+			actualFiles = append(actualFiles, file)
+		}
+	}
+	if len(actualFiles) != 3 {
+		return errIncorrectResultsCount(actualFiles)
+	}
+
+	for _, file := range actualFiles {
+		_ = os.Remove(file)
+	}
+
 	return nil
 }

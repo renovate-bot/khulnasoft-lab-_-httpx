@@ -5,7 +5,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/khulnasoft-labs/fastdialer/fastdialer"
+	"github.com/khulnasoft-lab/fastdialer/fastdialer"
 	"go.uber.org/multierr"
 )
 

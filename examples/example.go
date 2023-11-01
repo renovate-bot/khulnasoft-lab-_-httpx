@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/khulnasoft-labs/goflags"
-	"github.com/khulnasoft-labs/gologger"
-	"github.com/khulnasoft-labs/gologger/levels"
-	"github.com/khulnasoft-labs/httpx/runner"
+	"github.com/khulnasoft-lab/goflags"
+	"github.com/khulnasoft-lab/gologger"
+	"github.com/khulnasoft-lab/gologger/levels"
+	"github.com/khulnasoft-lab/httpx/runner"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 
 	options := runner.Options{
 		Methods:         "GET",
-		InputTargetHost: goflags.StringSlice{"scanme.sh", "khulnasoft.com", "localhost"},
+		InputTargetHost: goflags.StringSlice{"scanme.sh", "khulnasoft-lab.io", "localhost"},
 		//InputFile: "./targetDomains.txt", // path to file containing the target domains list
 		OnResult: func(r runner.Result) {
 			// handle error

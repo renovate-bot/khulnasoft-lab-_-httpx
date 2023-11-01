@@ -9,9 +9,9 @@ import (
 	"github.com/go-rod/rod/lib/launcher"
 	"github.com/go-rod/rod/lib/proto"
 	"github.com/pkg/errors"
-	fileutil "github.com/khulnasoft-labs/utils/file"
-	osutils "github.com/khulnasoft-labs/utils/os"
-	processutil "github.com/khulnasoft-labs/utils/process"
+	fileutil "github.com/khulnasoft-lab/utils/file"
+	osutils "github.com/khulnasoft-lab/utils/os"
+	processutil "github.com/khulnasoft-lab/utils/process"
 )
 
 // MustDisableSandbox determines if the current os and user needs sandbox mode disabled
@@ -28,7 +28,7 @@ type Browser struct {
 }
 
 func NewBrowser(proxy string, useLocal bool) (*Browser, error) {
-	dataStore, err := os.MkdirTemp("", "vulscan-*")
+	dataStore, err := os.MkdirTemp("", "nuclei-*")
 	if err != nil {
 		return nil, errors.Wrap(err, "could not create temporary directory")
 	}
