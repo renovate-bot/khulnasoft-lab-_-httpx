@@ -1,6 +1,8 @@
 module github.com/khulnasoft-lab/httpx
 
-go 1.20
+go 1.21
+
+toolchain go1.21.3
 
 require (
 	github.com/akrylysov/pogreb v0.10.1 // indirect
@@ -26,7 +28,7 @@ require (
 	github.com/Mzack9999/gcache v0.0.0-20230410081825-519e28eab057
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/corona10/goimagehash v1.1.0
-	github.com/go-faker/faker/v4 v4.1.1
+	github.com/go-faker/faker/v4 v4.2.0
 	github.com/go-rod/rod v0.114.0
 	github.com/hdm/jarm-go v0.0.7
 	github.com/jaytaylor/html2text v0.0.0-20230321000545-74c2419ad056
