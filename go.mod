@@ -1,6 +1,8 @@
 module github.com/khulnasoft-lab/httpx
 
-go 1.20
+go 1.21
+
+toolchain go1.21.1
 
 require (
 	github.com/akrylysov/pogreb v0.10.1 // indirect
@@ -15,9 +17,9 @@ require (
 	github.com/remeh/sizedwaitgroup v1.0.0
 	github.com/rs/xid v1.5.0
 	go.etcd.io/bbolt v1.3.7 // indirect
-	golang.org/x/net v0.17.0
-	golang.org/x/sys v0.13.0 // indirect
-	golang.org/x/text v0.13.0
+	golang.org/x/net v0.18.0
+	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/text v0.14.0
 )
 
 require github.com/spaolacci/murmur3 v1.1.0
@@ -33,8 +35,8 @@ require (
 	github.com/khulnasoft-lab/asnmap v1.0.1
 	github.com/khulnasoft-lab/cdncheck v1.0.13
 	github.com/khulnasoft-lab/clistats v0.0.5
-	github.com/khulnasoft-lab/dsl v0.0.0-20231002220339-4c3b5655036b
-	github.com/khulnasoft-lab/fastdialer v0.0.37
+	github.com/khulnasoft-lab/dsl v0.0.1
+	github.com/khulnasoft-lab/fastdialer v0.0.38
 	github.com/khulnasoft-lab/fdmax v0.0.7
 	github.com/khulnasoft-lab/goconfig v0.0.2
 	github.com/khulnasoft-lab/goflags v0.1.16
@@ -46,13 +48,13 @@ require (
 	github.com/khulnasoft-lab/retryablehttp-go v1.0.21
 	github.com/khulnasoft-lab/tlsx v0.0.0-20231101045244-b306c2a45866
 	github.com/khulnasoft-lab/utils v0.0.47
-	github.com/khulnasoft-lab/wappalyzergo v0.0.0-20231101023942-2f19f8c6a4ea
+	github.com/khulnasoft-lab/wappalyzergo v0.0.0-20231101072643-4ac589713361
 	github.com/mfonda/simhash v0.0.0-20151007195837-79f94a1100d6
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/stretchr/testify v1.8.4
-	github.com/zmap/zcrypto v0.0.0-20231018155041-c1c1128be414
+	github.com/zmap/zcrypto v0.0.0-20231106212110-94c8f62efae4
 	go.uber.org/multierr v1.11.0
-	golang.org/x/exp v0.0.0-20231006140011-7918f672742d
+	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
 )
 
 require (
@@ -116,7 +118,7 @@ require (
 	github.com/refraction-networking/utls v1.5.4 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
-	github.com/sashabaranov/go-openai v1.15.4 // indirect
+	github.com/sashabaranov/go-openai v1.16.0 // indirect
 	github.com/shirou/gopsutil/v3 v3.23.9 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect
@@ -145,10 +147,10 @@ require (
 	github.com/yuin/goldmark-emoji v1.0.1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.3 // indirect
 	github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248 // indirect
-	golang.org/x/crypto v0.14.0 // indirect
-	golang.org/x/mod v0.13.0 // indirect
+	golang.org/x/crypto v0.15.0 // indirect
+	golang.org/x/mod v0.14.0 // indirect
 	golang.org/x/oauth2 v0.13.0 // indirect
-	golang.org/x/tools v0.14.0 // indirect
+	golang.org/x/tools v0.15.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/djherbis/times.v1 v1.3.0 // indirect
