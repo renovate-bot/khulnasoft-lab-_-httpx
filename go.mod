@@ -1,8 +1,6 @@
 module github.com/khulnasoft-lab/httpx
 
-go 1.21
-
-toolchain go1.21.3
+go 1.20
 
 require (
 	github.com/akrylysov/pogreb v0.10.1 // indirect
