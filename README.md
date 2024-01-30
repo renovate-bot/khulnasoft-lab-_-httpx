@@ -10,7 +10,7 @@
 <a href="https://goreportcard.com/badge/github.com/khulnasoft-lab/httpx"><img src="https://goreportcard.com/badge/github.com/khulnasoft-lab/httpx"></a>
 <a href="https://github.com/khulnasoft-lab/httpx/releases"><img src="https://img.shields.io/github/release/khulnasoft-lab/httpx"></a>
 <a href="https://hub.docker.com/r/khulnasoft-lab/httpx"><img src="https://img.shields.io/docker/pulls/khulnasoft-lab/httpx.svg"></a>
-<a href="https://twitter.com/pdiscoveryio"><img src="https://img.shields.io/twitter/follow/pdiscoveryio.svg?logo=twitter"></a>
+<a href="https://twitter.com/khulnasoft"><img src="https://img.shields.io/twitter/follow/khulnasoft.svg?logo=twitter"></a>
 <a href="https://discord.gg/khulnasoft-lab"><img src="https://img.shields.io/discord/695645237418131507.svg?logo=discord"></a>
 </p>
 
@@ -254,7 +254,7 @@ cat hosts.txt | httpx
 /_/ /_/\__/\__/ .___/_/|_|   v1.1.1  
              /_/            
 
-    khulnasoft-lab.io
+    khulnasoft.com
 
 [WRN] Use with caution. You are responsible for your actions
 [WRN] Developers assume no liability and are not responsible for any misuse or damage.
@@ -346,7 +346,7 @@ subfinder -d hackerone.com -silent| httpx -title -tech-detect -status-code
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.1
 
-    khulnasoft-lab.io
+    khulnasoft.com
 
 Use with caution. You are responsible for your actions
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -372,7 +372,7 @@ httpx -l urls.txt -path /v1/api -fep
 /_/ /_/\__/\__/ .___/_/|_|
              /_/
 
-                khulnasoft-lab.io
+                khulnasoft.com
 
 [INF] Current httpx version v1.3.3 (latest)
 https://scanme.sh/v1/api
@@ -393,7 +393,7 @@ subfinder -d hackerone.com -silent | httpx -favicon
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.5
 
-      khulnasoft-lab.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -421,7 +421,7 @@ subfinder -d hackerone.com -silent | httpx -jarm
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.2.1
 
-      khulnasoft-lab.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -447,7 +447,7 @@ subfinder -d hackerone.com -silent | httpx -asn
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.2.1
 
-      khulnasoft-lab.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -476,7 +476,7 @@ httpx -l urls.txt -path /v1/api -sc
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.5
 
-      khulnasoft-lab.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions.
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -504,7 +504,7 @@ cat sub_domains.txt | docker run -i khulnasoft-lab/httpx
 /_/ /_/\__/\__/ .___/_/|_|
              /_/              v1.1.2
 
-      khulnasoft-lab.io
+      khulnasoft.com
 
 Use with caution. You are responsible for your actions
 Developers assume no liability and are not responsible for any misuse or damage.
@@ -612,7 +612,7 @@ Probing feature is inspired by [@tomnomnom/httprobe](https://github.com/tomnomno
 
 <div align="center">
 
-`httpx` is made with 💙 by the [khulnasoft-lab](https://khulnasoft-lab.io) team and distributed under [MIT License](LICENSE.md).
+`httpx` is made with 💙 by the [khulnasoft-lab](https://khulnasoft.com) team and distributed under [MIT License](LICENSE.md).
 
 
 <a href="https://discord.gg/khulnasoft-lab"><img src="https://raw.githubusercontent.com/khulnasoft-lab/nuclei-burp-plugin/main/static/join-discord.png" width="300" alt="Join Discord"></a>

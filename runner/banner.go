@@ -20,7 +20,7 @@ const version = `v1.3.6`
 // showBanner is used to show the banner to the user
 func showBanner() {
 	gologger.Print().Msgf("%s\n", banner)
-	gologger.Print().Msgf("\t\tkhulnasoft-lab.io\n\n")
+	gologger.Print().Msgf("\t\tkhulnasoft.com\n\n")
 }
 
 // GetUpdateCallback returns a callback function that updates httpx
