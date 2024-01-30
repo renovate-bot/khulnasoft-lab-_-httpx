@@ -2,8 +2,6 @@ module github.com/khulnasoft-lab/httpx
 
 go 1.21
 
-toolchain go1.21.1
-
 require (
 	github.com/akrylysov/pogreb v0.10.1 // indirect
 	github.com/corpix/uarand v0.2.0
@@ -17,8 +15,8 @@ require (
 	github.com/remeh/sizedwaitgroup v1.0.0
 	github.com/rs/xid v1.5.0
 	go.etcd.io/bbolt v1.3.7 // indirect
-	golang.org/x/net v0.18.0
-	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/net v0.19.0
+	golang.org/x/sys v0.16.0 // indirect
 	golang.org/x/text v0.14.0
 )
 
@@ -35,7 +33,7 @@ require (
 	github.com/khulnasoft-lab/asnmap v1.0.1
 	github.com/khulnasoft-lab/cdncheck v1.0.13
 	github.com/khulnasoft-lab/clistats v0.0.5
-	github.com/khulnasoft-lab/dsl v0.0.1
+	github.com/khulnasoft-lab/dsl v0.0.2
 	github.com/khulnasoft-lab/fastdialer v0.0.38
 	github.com/khulnasoft-lab/fdmax v0.0.7
 	github.com/khulnasoft-lab/goconfig v0.0.2
@@ -46,13 +44,13 @@ require (
 	github.com/khulnasoft-lab/ratelimit v0.0.10
 	github.com/khulnasoft-lab/rawhttp v0.1.20
 	github.com/khulnasoft-lab/retryablehttp-go v1.0.21
-	github.com/khulnasoft-lab/tlsx v0.0.0-20231101045244-b306c2a45866
+	github.com/khulnasoft-lab/tlsx v1.1.16
 	github.com/khulnasoft-lab/utils v0.0.47
-	github.com/khulnasoft-lab/wappalyzergo v0.0.0-20231101072643-4ac589713361
+	github.com/khulnasoft-lab/wappalyzergo v0.0.0-20240105115313-0f1cce0ae2fb
 	github.com/mfonda/simhash v0.0.0-20151007195837-79f94a1100d6
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/stretchr/testify v1.8.4
-	github.com/zmap/zcrypto v0.0.0-20231106212110-94c8f62efae4
+	github.com/zmap/zcrypto v0.0.0-20231219022726-a1f61fb1661c
 	go.uber.org/multierr v1.11.0
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
 )
@@ -64,7 +62,7 @@ require (
 	github.com/Mzack9999/go-http-digest-auth-client v0.6.1-0.20220414142836-eb8883508809 // indirect
 	github.com/VividCortex/ewma v1.2.0 // indirect
 	github.com/alecthomas/chroma v0.10.0 // indirect
-	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/andybalholm/brotli v1.0.6 // indirect
 	github.com/andybalholm/cascadia v1.3.2 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
@@ -72,13 +70,13 @@ require (
 	github.com/charmbracelet/glamour v0.6.0 // indirect
 	github.com/cheggaaa/pb/v3 v3.1.4 // indirect
 	github.com/cloudflare/cfssl v1.6.4 // indirect
-	github.com/cloudflare/circl v1.3.3 // indirect
+	github.com/cloudflare/circl v1.3.7 // indirect
 	github.com/cnf/structhash v0.0.0-20201127153200-e1b16c1ebc08 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/denisbrodbeck/machineid v1.0.1 // indirect
 	github.com/dimchansky/utfbom v1.1.1 // indirect
 	github.com/dlclark/regexp2 v1.8.1 // indirect
-	github.com/dsnet/compress v0.0.1 // indirect
+	github.com/dsnet/compress v0.0.2-0.20210315054119-f66993602bf5 // indirect
 	github.com/fatih/color v1.15.0 // indirect
 	github.com/gaukas/godicttls v0.0.4 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
@@ -89,7 +87,7 @@ require (
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/hashicorp/go-version v1.6.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/kataras/jwt v0.1.10 // indirect
+	github.com/kataras/jwt v0.1.12 // indirect
 	github.com/khulnasoft-lab/blackrock v0.0.5 // indirect
 	github.com/khulnasoft-lab/freeport v0.0.3 // indirect
 	github.com/khulnasoft-lab/gostruct v0.0.1-beta // indirect
@@ -114,11 +112,11 @@ require (
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
-	github.com/quic-go/quic-go v0.37.4 // indirect
+	github.com/quic-go/quic-go v0.37.7 // indirect
 	github.com/refraction-networking/utls v1.5.4 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
-	github.com/sashabaranov/go-openai v1.16.0 // indirect
+	github.com/sashabaranov/go-openai v1.18.1 // indirect
 	github.com/shirou/gopsutil/v3 v3.23.9 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect
@@ -147,7 +145,7 @@ require (
 	github.com/yuin/goldmark-emoji v1.0.1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.3 // indirect
 	github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248 // indirect
-	golang.org/x/crypto v0.15.0 // indirect
+	golang.org/x/crypto v0.17.0 // indirect
 	golang.org/x/mod v0.14.0 // indirect
 	golang.org/x/oauth2 v0.13.0 // indirect
 	golang.org/x/tools v0.15.0 // indirect
