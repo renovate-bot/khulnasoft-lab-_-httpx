@@ -16,7 +16,7 @@ require (
 	github.com/khulnasoft-lab/asnmap v1.0.1
 	github.com/khulnasoft-lab/cdncheck v1.0.13
 	github.com/khulnasoft-lab/clistats v0.0.5
-	github.com/khulnasoft-lab/dsl v0.0.2
+	github.com/khulnasoft-lab/dsl v0.0.3
 	github.com/khulnasoft-lab/fastdialer v0.0.38
 	github.com/khulnasoft-lab/fdmax v0.0.7
 	github.com/khulnasoft-lab/goconfig v0.0.2
@@ -38,7 +38,7 @@ require (
 	github.com/remeh/sizedwaitgroup v1.0.0
 	github.com/rs/xid v1.5.0
 	github.com/spaolacci/murmur3 v1.1.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	github.com/zmap/zcrypto v0.0.0-20231219022726-a1f61fb1661c
 	go.uber.org/multierr v1.11.0
 	golang.org/x/exp v0.0.0-20240119083558-1b970713d09a
@@ -110,7 +110,7 @@ require (
 	github.com/refraction-networking/utls v1.5.4 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
-	github.com/sashabaranov/go-openai v1.18.1 // indirect
+	github.com/sashabaranov/go-openai v1.27.1 // indirect
 	github.com/shirou/gopsutil/v3 v3.23.9 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect
